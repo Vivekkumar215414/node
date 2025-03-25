@@ -1,0 +1,72 @@
+[
+  {
+    "Make": "Tesla",
+    "Model": "Model S",
+    "HorsePower": 670,
+    "Color": "Red",
+    "Price": 79999
+  },
+  {
+    "Make": "Hyundai",
+    "Model": "EON",
+    "HorsePower": 671,
+    "Color": "White",
+    "Price": 69999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  },
+  {
+    "Make": "Maruti",
+    "Model": "Swift",
+    "HorsePower": 675,
+    "Color": "Black",
+    "Price": 59999
+  }
+]
