@@ -10,7 +10,7 @@
     <a href="/logout">Logout</a>
 </body>
 </html> -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,4 +25,67 @@
         <a href="/logout" class="btn btn-danger">Logout</a>
     </div>
 </body>
-</html>
+</html> -->
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import "./Dashboard.css"; // Import the CSS file
+import { Button } from "@/components/ui/button";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { ShoppingCart, Users, DollarSign } from "lucide-react";
+
+const ordersData = [
+  { name: "Mon", orders: 50 },
+  { name: "Tue", orders: 80 },
+  { name: "Wed", orders: 65 },
+  { name: "Thu", orders: 90 },
+  { name: "Fri", orders: 120 },
+  { name: "Sat", orders: 150 },
+  { name: "Sun", orders: 110 },
+];
+
+export default function Dashboard() {
+  return (
+    <div className="p-4 grid gap-6 grid-cols-1 md:grid-cols-3">
+      <Card className="p-4 flex items-center space-x-4">
+        <ShoppingCart className="w-12 h-12 text-blue-500" />
+        <div>
+          <h3 className="text-xl font-semibold">Total Orders</h3>
+          <p className="text-2xl font-bold">1,250</p>
+        </div>
+      </Card>
+
+      <Card className="p-4 flex items-center space-x-4">
+        <Users className="w-12 h-12 text-green-500" />
+        <div>
+          <h3 className="text-xl font-semibold">Active Users</h3>
+          <p className="text-2xl font-bold">340</p>
+        </div>
+      </Card>
+
+      <Card className="p-4 flex items-center space-x-4">
+        <DollarSign className="w-12 h-12 text-yellow-500" />
+        <div>
+          <h3 className="text-xl font-semibold">Revenue</h3>
+          <p className="text-2xl font-bold">$24,500</p>
+        </div>
+      </Card>
+
+      <Card className="p-4 col-span-1 md:col-span-3">
+        <h3 className="text-xl font-semibold mb-4">Orders Over the Week</h3>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={ordersData}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="orders" fill="#8884d8" />
+          </BarChart>
+        </ResponsiveContainer>
+      </Card>
+
+      <Card className="p-4 col-span-1 md:col-span-3 text-center">
+        <Button className="px-6 py-2 text-lg">View Orders</Button>
+      </Card>
+    </div>
+  );
+}
+
